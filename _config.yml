@@ -1,1 +1,12 @@
+# Site settings
+title: Divergence
+tagline: Stuff
+email: drakonik+blog@gmail.com
+description: "Nick Dumas is a programmer and stuff."
+baseurl: ""
+url: "http://therealfakemoot.github.io"
+twitter_username: nickdumas
+
+# Build settings
 markdown: kramdown
+permalink: pretty
