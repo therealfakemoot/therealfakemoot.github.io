@@ -2,3 +2,5 @@
 .*swo
 *.yml
 _site/
+
+Gemfile.lock
