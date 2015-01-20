@@ -1,5 +1,6 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
+<html lang="en">
 
   {% include head.html %}
 
@@ -7,15 +8,11 @@
 
     {% include header.html %}
 
-    <div class="page-content">
-      <div>
+    <div id="layout" class="pure-g">
       {{ content }}
-      </div>
-    </div>
+    /div>
 
     {% include footer.html %}
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script src="/js/bootstrap.min.js"></script>
     </body>
 </html>
