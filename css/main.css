@@ -1,6 +1,18 @@
+/*
+ * Branding styles
+ */
+
 .brand-font {
     font-family: 'museo_slab500';
 }
+
+.brand-menu-header {
+    color: #444;
+}
+
+/*
+ * Blog and post styles
+ */
 
 .post-list {
     list-style-type: none;
@@ -11,5 +23,15 @@
 }
 
 .post-container {
-    padding-left: 40px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+/*
+ * Other
+ */
+
+.commit-message {
+    font-size: 75%;
+    padding: 10px;
 }
