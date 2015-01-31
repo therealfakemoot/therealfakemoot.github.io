@@ -1,18 +1,32 @@
 /*
  * Branding styles
  */
-
-.brand-font {
+.font-brand {
     font-family: 'museo_slab500';
 }
 
-.brand-menu-header {
+.color-primary {
+    color: #AD655F; /* Marsala, or similar */
+}
+
+.color-secondary {
     color: #444;
+}
+
+a {
+    text-decoration: none;
 }
 
 /*
  * Blog and post styles
  */
+
+
+.post-preview {
+    padding: 5px;
+    margin-bottom: 10px;
+    border-style: solid;
+}
 
 .post-list {
     list-style-type: none;
@@ -23,15 +37,10 @@
 }
 
 .post-container {
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-top: 15px;
+    padding-left: 25px;
 }
 
 /*
  * Other
  */
-
-.commit-message {
-    font-size: 75%;
-    padding: 10px;
-}
