@@ -2,7 +2,7 @@
 layout: post
 title: "collections2"
 description: "The creation and motivation"
-category: post
+category: General
 tags: ['collections2']
 ---
 
