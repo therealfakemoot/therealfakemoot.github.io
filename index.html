@@ -2,16 +2,29 @@
 layout: default
 ---
 
-<div class="post-container pure-u-5-5">
-    <h1 class="brand-font">Posts</h1>
-    <ul class="post-list">
-        {% for post in site.posts %}
-        <li>
-        <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
+<div class="post-container pure-u-1">
+    <div class="post-list">
+    {% for post in site.posts %}
+    <div class="post-preview">
+        <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span> | 
         <a class="post-link brand-font" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-</span>
         <div>{{ post.excerpt }}</div>
-        </li>
-        {% endfor %}
-    </ul>
+        ---
+        <div class="post-info">
+            <div class="post-category">
+                <span class="color-primary"> Category | </span>
+                <span class="color-primary brand-font"><a class="brand-font" href="/category/{{post.category}}">{{ post.category}}</a></span>
+            </div>
+        {% if post.tags %}
+            <div class="post-tags">
+                <span class="brand-font">Tags:</span>
+                {% for tag in post.tags %}
+                <span class="post-tag">{{ tag }}</span>
+                {% endfor %}
+            </div>
+        </div>
+        {% endif %}
+    </div>
+    {% endfor %}
+    </div>
 </div>
