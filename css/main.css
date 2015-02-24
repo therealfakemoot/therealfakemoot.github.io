@@ -1,6 +1,10 @@
 /*
  * Branding styles
  */
+html {
+    background: #86A058;
+}
+
 .font-brand {
     font-family: 'museo_slab500';
 }
@@ -25,7 +29,10 @@ a {
 .post-preview {
     padding: 5px;
     margin-bottom: 10px;
+    background: #4D691E;
+    border-color: #A9C082;
     border-style: solid;
+    border-radius: 5px;
 }
 
 .post-list {
