@@ -2,18 +2,18 @@
 layout: default
 ---
 
-<div class="post-container pure-u-1">
+<div class="post-container pure-u-1 color-primary">
     <div class="post-list">
     {% for post in site.posts %}
-    <div class="post-preview">
+    <div class="post-preview font-brand color-primary">
         <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span> | 
         <a class="post-link brand-font" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
         <div>{{ post.excerpt }}</div>
         ---
         <div class="post-info">
             <div class="post-category">
-                <span class="color-primary"> Category | </span>
-                <span class="color-primary brand-font"><a class="brand-font" href="/category/{{post.category}}">{{ post.category}}</a></span>
+                <span> Category | </span>
+                <a class="brand-font" href="/category/{{post.category}}">{{ post.category}}</a>
             </div>
         {% if post.tags %}
             <div class="post-tags">
